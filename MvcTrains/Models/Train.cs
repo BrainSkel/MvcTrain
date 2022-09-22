@@ -12,5 +12,6 @@ namespace MvcTrains.Models
         public int Stops { get; set; }
 
         public string? WifiPassword { get; set; }
+
     }
 }

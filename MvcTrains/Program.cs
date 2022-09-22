@@ -1,17 +1,23 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using MvcTrains.Data;
+using MvcTrains.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<MvcTrainsContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("MvcTrainsContext") ?? throw new InvalidOperationException("Connection string 'MvcTrainsContext' not found.")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("MvcTrainsContext")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
-builder.Services.AddDbContext<MvcTrainsContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("MvcTrainsContext")));
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+
+    SeedData.Initialize(services);
+}
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
