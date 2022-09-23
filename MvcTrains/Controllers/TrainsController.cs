@@ -20,9 +20,17 @@ namespace MvcTrains.Controllers
         }
 
         // GET: Trains
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
-              return View(await _context.Train.ToListAsync());
+            var movies = from m in _context.Train
+                         select m;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                movies = movies.Where(s => s.Destination!.Contains(searchString));
+            }
+
+            return View(await movies.ToListAsync());
         }
 
         // GET: Trains/Details/5
