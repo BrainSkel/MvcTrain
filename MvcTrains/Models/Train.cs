@@ -7,6 +7,7 @@ namespace MvcTrains.Models
 
         public int Id { get; set; }
 
+        public string? Destination { get; set; }
         public int Speed { get; set; }
 
         public int Stops { get; set; }

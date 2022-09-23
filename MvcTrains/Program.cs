@@ -4,6 +4,7 @@ using MvcTrains.Data;
 using MvcTrains.Models;
 
 var builder = WebApplication.CreateBuilder(args);
+
 builder.Services.AddDbContext<MvcTrainsContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("MvcTrainsContext")));
 

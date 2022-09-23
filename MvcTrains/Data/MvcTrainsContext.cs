@@ -14,6 +14,6 @@ namespace MvcTrains.Data
         {
         }
 
-        public DbSet<MvcTrains.Models.Train> Train { get; set; } = default!;
+        public DbSet<MvcTrains.Models.Train> Train { get; set; }
     }
 }
