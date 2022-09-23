@@ -54,7 +54,7 @@ namespace MvcTrains.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Speed,Stops,WifiPassword")] Train train)
+        public async Task<IActionResult> Create([Bind("Id, Destination, Speed,Stops,WifiPassword")] Train train)
         {
             if (ModelState.IsValid)
             {
