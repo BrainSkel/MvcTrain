@@ -9,7 +9,7 @@ namespace MvcTrains.Data
 {
     public class MvcTrainsContext : DbContext
     {
-        public MvcTrainsContext (DbContextOptions<MvcTrainsContext> options)
+        public MvcTrainsContext(DbContextOptions<MvcTrainsContext> options)
             : base(options)
         {
         }

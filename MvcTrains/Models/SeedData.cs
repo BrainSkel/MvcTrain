@@ -17,13 +17,6 @@ namespace MvcTrains.Models
                 }
 
                 context.Train.AddRange(
-                    new Train
-                    {
-                        Destination = "Tartu",
-                        Speed = 70,
-                        Stops = 21,
-                        WifiPassword = "HelloWorld"
-                    }
                     
                 );
                 context.SaveChanges();

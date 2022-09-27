@@ -1,59 +1,67 @@
-﻿@model IEnumerable<MvcTrains.Models.Train>
+﻿@model MvcTrains.Models.TrainStopViewModel
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Train";
 }
 
-<h1>Index</h1>
+<h1>Train</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
 </p>
-<form asp-controller="Trains" asp-action="Index">
+<form asp-controller="Trains" asp-action="Index" method="get">
     <p>
-        Destination: <input type="text" name="SearchString" />
+        
+        <select asp-for="TrainStops" asp-items="Model.Stops">
+            <option value="">All</option>
+        </select>
+
+        Dest: <input type="text" asp-for="SearchString" />
         <input type="submit" value="Filter" />
+        
     </p>
 </form>
+
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Destination)
+                @Html.DisplayNameFor(model => model.Trains[0].Destination)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Speed)
+                @Html.DisplayNameFor(model => model.Trains[0].Speed)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Stops)
+                @Html.DisplayNameFor(model => model.Trains[0].Stops)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.WifiPassword)
+                @Html.DisplayNameFor(model => model.Trains[0].WifiPassword)
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Destination)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Speed)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Stops)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.WifiPassword)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model.Trains)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Destination)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Speed)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Stops)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.WifiPassword)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

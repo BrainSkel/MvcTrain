@@ -24,6 +24,10 @@ i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctra
 i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctrains\mvctrains\data\mvctrainscontext.cs
 ++Migrations
 i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctrains\mvctrains\migrations\
+++20220922114508_InitialCreate.cs
+i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctrains\mvctrains\migrations\20220922114508_initialcreate.cs
+++MvcTrainsContextModelSnapshot.cs
+i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctrains\mvctrains\migrations\mvctrainscontextmodelsnapshot.cs
 ++Models
 i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctrains\mvctrains\models\
 ++ErrorViewModel.cs
@@ -36,16 +40,24 @@ i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctra
 i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctrains\mvctrains\views\
 ++Home
 i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctrains\mvctrains\views\home\
+++Index.cshtml
+i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctrains\mvctrains\views\home\index.cshtml
+i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctrains\mvctrains\views\trains\index.cshtml
+++Privacy.cshtml
+i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctrains\mvctrains\views\home\privacy.cshtml
 ++Shared
 i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctrains\mvctrains\views\shared\
 ++Train
-i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctrains\mvctrains\views\train\
-++Index.cshtml
-i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctrains\mvctrains\views\train\index.cshtml
-i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctrains\mvctrains\views\home\index.cshtml
-i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctrains\mvctrains\views\trains\index.cshtml
 ++Trains
 i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctrains\mvctrains\views\trains\
+++Create.cshtml
+i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctrains\mvctrains\views\trains\create.cshtml
+++Delete.cshtml
+i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctrains\mvctrains\views\trains\delete.cshtml
+++Details.cshtml
+i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctrains\mvctrains\views\trains\details.cshtml
+++Edit.cshtml
+i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctrains\mvctrains\views\trains\edit.cshtml
 ++_ViewImports.cshtml
 i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctrains\mvctrains\views\_viewimports.cshtml
 ++_ViewStart.cshtml
@@ -55,7 +67,7 @@ i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctra
 ++Program.cs
 i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctrains\mvctrains\program.cs
 ++SQL Server Express LocalDB (Local) (ConnectionStrings:MvcTrainsContext)
-i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:>923
+i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:>918
 ++Analyzers
 i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:analyzers
 ++Frameworks
@@ -76,26 +88,14 @@ i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctra
 i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctrains\mvctrains\wwwroot\lib\
 ++favicon.ico
 i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctrains\mvctrains\wwwroot\favicon.ico
-++20220922114508_InitialCreate.cs
-i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctrains\mvctrains\migrations\20220922114508_initialcreate.cs
-++MvcTrainsContextModelSnapshot.cs
-i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctrains\mvctrains\migrations\mvctrainscontextmodelsnapshot.cs
-++Privacy.cshtml
-i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctrains\mvctrains\views\home\privacy.cshtml
+++20220922114508_InitialCreate.Designer.cs
+i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctrains\mvctrains\migrations\20220922114508_initialcreate.designer.cs
 ++_Layout.cshtml
 i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctrains\mvctrains\views\shared\_layout.cshtml
 ++_ValidationScriptsPartial.cshtml
 i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctrains\mvctrains\views\shared\_validationscriptspartial.cshtml
 ++Error.cshtml
 i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctrains\mvctrains\views\shared\error.cshtml
-++Create.cshtml
-i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctrains\mvctrains\views\trains\create.cshtml
-++Delete.cshtml
-i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctrains\mvctrains\views\trains\delete.cshtml
-++Details.cshtml
-i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctrains\mvctrains\views\trains\details.cshtml
-++Edit.cshtml
-i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctrains\mvctrains\views\trains\edit.cshtml
 ++appsettings.Development.json
 i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctrains\mvctrains\appsettings.development.json
 ++MessagePackAnalyzer
@@ -133,15 +133,15 @@ i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctra
 ++Microsoft.NETCore.App
 i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctrains\mvctrains\microsoft.netcore.app
 ++Microsoft.EntityFrameworkCore.Design (6.0.9)
-i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:>904
+i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:>914
 ++Microsoft.EntityFrameworkCore.SqlServer (6.0.9)
-i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:>903
+i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:>913
 ++Microsoft.EntityFrameworkCore.Tools (6.0.9)
-i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:>906
+i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:>916
 ++Microsoft.VisualStudio.Web.CodeGeneration.Design (6.0.9)
-i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:>907
+i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:>917
 ++Swashbuckle.AspNetCore (6.3.0)
-i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:>905
+i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:>915
 ++serviceDependencies.local.json
 i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctrains\mvctrains\properties\servicedependencies.local.json
 ++site.css
@@ -156,8 +156,6 @@ i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctra
 i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctrains\mvctrains\wwwroot\lib\jquery-validation\
 ++jquery-validation-unobtrusive
 i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctrains\mvctrains\wwwroot\lib\jquery-validation-unobtrusive\
-++20220922114508_InitialCreate.Designer.cs
-i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctrains\mvctrains\migrations\20220922114508_initialcreate.designer.cs
 ++_Layout.cshtml.css
 i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctrains\mvctrains\views\shared\_layout.cshtml.css
 ++dist
@@ -277,3 +275,10 @@ i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctra
 i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctrains\mvctrains\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
 ++bootstrap.esm.min.js.map
 i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctrains\mvctrains\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+++20220923061702_Destination.cs
+i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctrains\mvctrains\migrations\20220923061702_destination.cs
+++20220923061702_Destination.Designer.cs
+i:{8e7e3080-026f-41ae-afc0-fdc4a2665d25}:c:\users\hanne\desktop\coding\c#\mvctrains\mvctrains\migrations\20220923061702_destination.designer.cs
+++MovieGenreViewModel.cs
+++NewFolder
+++TrainSpeedViewModel.cs
