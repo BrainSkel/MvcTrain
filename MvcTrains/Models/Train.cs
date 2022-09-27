@@ -9,6 +9,8 @@ namespace MvcTrains.Models
 
         public int Id { get; set; }
 
+
+        [RegularExpression(@"^[A-Z]+[a-zA-Z\s]*$")]
         [Display(Name = "Destination")]
         [StringLength(128, MinimumLength = 3)]
         [Required]
@@ -18,7 +20,7 @@ namespace MvcTrains.Models
         [Required]
         public int Speed { get; set; }
 
-        [StringLength(128, MinimumLength = 1)]
+        [StringLength(2)]
         [Display(Name = "Stops")]
         [Required]
         public string? Stops { get; set; }
