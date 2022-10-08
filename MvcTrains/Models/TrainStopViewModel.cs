@@ -8,7 +8,7 @@ namespace MvcTrains.Models
     {
         public List<Train>? Trains { get; set; }
         public SelectList? Stops { get; set; }
-        public string? TrainStops { get; set; }
+        public int TrainStops { get; set; }
         public string? SearchString { get; set; }
     }
 }

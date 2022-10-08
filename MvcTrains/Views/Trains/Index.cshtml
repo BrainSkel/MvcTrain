@@ -12,11 +12,11 @@
 <form asp-controller="Trains" asp-action="Index" method="get">
     <p>
         
-        <select asp-for="TrainStops" asp-items="Model.Stops">
+        Stops: <select asp-for="TrainStops" asp-items="Model.Stops">
             <option value="">All</option>
         </select>
 
-        Dest: <input type="text" asp-for="SearchString" />
+        Destination: <input type="text" asp-for="SearchString" />
         <input type="submit" value="Filter" />
         
     </p>

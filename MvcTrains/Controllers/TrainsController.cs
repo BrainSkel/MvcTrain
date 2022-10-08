@@ -20,10 +20,9 @@ namespace MvcTrains.Controllers
         }
 
         // GET: Trains
-        public async Task<IActionResult> Index(string trainStops, string searchString)
+        public async Task<IActionResult> Index(int trainStops, string searchString)
         {
-            // Use LINQ to get list of genres.
-            IQueryable<string> stopQuery = from m in _context.Train
+            IQueryable<int> stopQuery = from m in _context.Train
                                            orderby m.Stops
                                            select m.Stops;
 
@@ -35,18 +34,18 @@ namespace MvcTrains.Controllers
                 trains = trains.Where(s => s.Destination.Contains(searchString));
             }
 
-            if (!string.IsNullOrEmpty(trainStops))
+            if (trainStops > 0)
             {
                 trains = trains.Where(x => x.Stops == trainStops);
             }
 
-            var trainGenreVM = new TrainStopViewModel
+            var trainStopsVM = new TrainStopViewModel
             {
                 Stops = new SelectList(await stopQuery.Distinct().ToListAsync()),
                 Trains = await trains.ToListAsync()
             };
 
-            return View(trainGenreVM);
+            return View(trainStopsVM);
         }
 
         // GET: Trains/Details/5

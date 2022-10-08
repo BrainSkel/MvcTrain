@@ -15,7 +15,7 @@ namespace MvcTrains.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Speed = table.Column<int>(type: "int", nullable: false),
-                    Stops = table.Column<int>(type: "nvarchar(max)", nullable: false),
+                    Stops = table.Column<int>(type: "int", nullable: false),
                     WifiPassword = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>

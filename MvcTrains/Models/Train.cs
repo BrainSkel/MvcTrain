@@ -20,10 +20,9 @@ namespace MvcTrains.Models
         [Required]
         public int Speed { get; set; }
 
-        [StringLength(2)]
         [Display(Name = "Stops")]
         [Required]
-        public string? Stops { get; set; }
+        public int Stops { get; set; }
 
         [Display(Name ="Wifi password")]
         [StringLength(16, MinimumLength = 5)]
